@@ -6,9 +6,12 @@ def check_if_north()
     if compass.is_calibrated()
         return compass.heading()
 
-def notify()
+def notify_if_north()
     if check_if_north() == 0
-        display.show(Image.HAPPY)
+        display.show(Image.HEART)
+    elif
+        display.show(Image.ANGRY)
+
 
 while True:
-    notify()
+    notify_if_north()
