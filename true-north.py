@@ -3,7 +3,8 @@ from microbit import *
 compass.calibrate()
 
 def notify_if_north():
-    if compass.heading == 0:
+    heading = compass.heading()
+    if heading < 45:
         display.show(Image.HEART)
     else:
         display.show(Image.ANGRY)
