@@ -5,7 +5,7 @@ compass.calibrate()
 def notify_if_north():
     if compass.heading == 0:
         display.show(Image.HEART)
-    elif:
+    else:
         display.show(Image.ANGRY)
 
 
