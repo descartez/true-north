@@ -4,10 +4,7 @@ compass.calibrate()
 
 def notify_if_north():
     heading = compass.heading()
-    if heading < 45:
-        display.show(Image.HEART)
-    else:
-        display.show(Image.ANGRY)
+    display.scroll(heading)
 
 
 while True:
